@@ -10,10 +10,10 @@ function processarFormulario(event) {
     const valor = document.getElementById('valor').value;
     
     // Configuração do telefone de destino (Corrigido)
-    const telefoneDestino = "5522999902217"; 
+    const telefoneDestino = "5517991442130"; 
 
     // Monta a mensagem personalizada para o WhatsApp
-    const texto = `Olá! Meu nome é ${nome} (${email}) e acabei de realizar uma doação de R$ ${valor},00 PIX para apoiar a Sala de Informática em Moçambique. Segue o comprovante em anexo:`;
+    const texto = `Olá! Meu nome é ${nome} (${email}) e acabei de realizar uma doação de R$ ${valor},00 PIX para apoiar a Doação de Sandálias Havaianas em Moçambique. Segue o comprovante em anexo:`;
     
     // Cria a URL de redirecionamento do WhatsApp
     const url = `https://api.whatsapp.com/send?phone=${telefoneDestino}&text=${encodeURIComponent(texto)}`;
